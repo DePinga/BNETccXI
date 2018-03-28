@@ -47,4 +47,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, BLOTCHED_DOOMED_TONGUE);
     end
 end;
-

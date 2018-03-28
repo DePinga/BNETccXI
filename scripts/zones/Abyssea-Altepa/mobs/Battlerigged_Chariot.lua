@@ -55,4 +55,3 @@ function onMobDeath(mob, player, isKiller)
         player:addSpell(SPELL_ID);
     end
 end;
-

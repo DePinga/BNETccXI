@@ -47,4 +47,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, CRACKED_SKELETON_CLAVICLE);
     end
 end;
-

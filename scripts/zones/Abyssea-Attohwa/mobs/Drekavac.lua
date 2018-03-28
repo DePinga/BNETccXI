@@ -50,4 +50,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, WRITHING_GHOST_FINGER);
     end
 end;
-

@@ -49,4 +49,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, SHRIVELED_HECTEYES_STALK);
     end
 end;
-

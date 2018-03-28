@@ -64,4 +64,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, BULBOUS_CRAWLER_COCOON);
     end
 end;
-

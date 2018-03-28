@@ -47,4 +47,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, VENOMOUS_WAMOURA_FEELER);
     end
 end;
-

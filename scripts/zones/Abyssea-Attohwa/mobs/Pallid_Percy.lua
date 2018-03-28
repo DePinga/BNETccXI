@@ -52,4 +52,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, MUCID_WORM_SEGMENT);
     end
 end;
-

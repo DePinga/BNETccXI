@@ -55,4 +55,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, EMERALD_ABYSSITE_OF_SOJOURN);
     end
 end;
-

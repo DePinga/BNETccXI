@@ -47,4 +47,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, JADE_ABYSSITE_OF_EXPERTISE);
     end
 end;
-

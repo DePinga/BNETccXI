@@ -47,4 +47,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, ATMA_OF_THE_RAISED_TAIL);
     end
 end;
-

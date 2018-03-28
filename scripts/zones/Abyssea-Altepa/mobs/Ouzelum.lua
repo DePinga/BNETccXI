@@ -56,4 +56,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, ATMA_OF_THE_SCARLET_WING);
     end
 end;
-

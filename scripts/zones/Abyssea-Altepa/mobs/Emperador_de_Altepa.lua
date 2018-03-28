@@ -48,4 +48,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, ATMA_OF_THE_SAND_EMPEROR);
     end
 end;
-

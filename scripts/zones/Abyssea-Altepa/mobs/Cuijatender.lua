@@ -53,4 +53,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, ATMA_OF_A_THOUSAND_NEEDLES);
     end
 end;
-

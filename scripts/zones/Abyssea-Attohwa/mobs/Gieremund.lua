@@ -47,4 +47,3 @@ function onMobDeath(mob, player, isKiller)
         player:messageSpecial(KEYITEM_OBTAINED, RUSTED_HOUND_COLLAR);
     end
 end;
-
