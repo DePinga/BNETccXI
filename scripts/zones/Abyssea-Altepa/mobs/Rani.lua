@@ -14,6 +14,7 @@ require("scripts/globals/titles");
 function onMobInitialize(mob)
 end;
 
+
 function onMobSpawn(mob)
     -- setMod
     mob:setMod(MOD_REGAIN,20);
@@ -29,8 +30,10 @@ function onMobSpawn(mob)
 
 end;
 
+
 function onMobEngaged(mob,target)
 end;
+
 
 function onMobFight(mob,target)
     if (mob:getHPP() < 50) then
@@ -44,32 +47,32 @@ function onMobFight(mob,target)
     end
 end;
 
+
 function onMobDeath(mob, player, isKiller)
     player:addTitle(RANI_DECROWNER);
 
-    -- if (isKiller == true) then
-        -- local itemRate = math.random(1,100);
-        -- local lootTable =
-        -- {
-            -- [1] = itemid, -- comment me
-            -- [2] = itemid, -- comment me
-            -- [3] = itemid, -- comment me
-            -- [4] = itemid, -- comment me
-            -- [5] = itemid  -- comment me
-        -- }
-        -- if (itemRate >= 50) then -- First drop is 50 in 100.
-            -- player:addTreasure(lootTable[math.random(1,5)], mob);
-        -- end
-        -- if (itemRate >= 90) then -- You lucky high roller, 2nd drop is only 10 in 100
-            -- player:addTreasure(lootTable[math.random(1,5)], mob);
-        -- end
-    -- end
-
-
+    if (isKiller == true) then
+    --[[
+        local itemRate = math.random(1,100);
+        local lootTable =
+        {
+            [1] = 20546, -- Ninzas +1
+            [2] = 20736, -- Iztaasu +1
+            [3] = 21051, -- Shichishito +1
+            [4] = 21126, -- Aedold +1
+            [5] = 21286  -- Hgafircian +1
+        }
+        if (itemRate >= 50) then -- First drop is 50 in 100.
+            player:addTreasure(lootTable[math.random(1,5)], mob);
+        end
+        if (itemRate >= 90) then -- You lucky high roller, 2nd drop is only 10 in 100
+            player:addTreasure(lootTable[math.random(1,5)], mob);
+        end
+    end
+    ]]
     local CHANCE = 15;
     if (math.random(0,99) < CHANCE  and player:hasKeyItem(ATMA_OF_THE_MERCILESS_MATRIARCH) == false) then
         player:addKeyItem(ATMA_OF_THE_MERCILESS_MATRIARCH);
         player:messageSpecial(KEYITEM_OBTAINED, ATMA_OF_THE_MERCILESS_MATRIARCH);
     end
-
 end;
