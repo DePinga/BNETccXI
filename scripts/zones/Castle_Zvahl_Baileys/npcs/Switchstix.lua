@@ -197,7 +197,7 @@ function onTrade(player,npc,trade)
          elseif (eventParams[7] == 2) then
             player:setVar("RELIC_DUE_AT",os.time() + RELIC_2ND_UPGRADE_WAIT_TIME);
 
-         -- Stage 3->4, wait RELIC_3RD_UPGRADE_WAIT_TIME (3600s / 1 hour default)01.0
+         -- Stage 3->4, wait RELIC_3RD_UPGRADE_WAIT_TIME (3600s / 1 hour default)
          elseif (eventParams[7] == 3) then
             player:setVar("RELIC_DUE_AT",os.time() + RELIC_3RD_UPGRADE_WAIT_TIME);
          end
