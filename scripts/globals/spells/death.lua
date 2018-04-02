@@ -12,11 +12,9 @@ function onMagicCastingCheck(caster,target,spell)
 end;
 
 function onSpellCast(caster,target,spell)
-    if (target:hasStatusEffect(EFFECT_MAGIC_SHIELD) or math.random(0,99) < target:getMod(MOD_DEATHRES)) then
-      if (target:getStatusEffect(EFFECT_MAGIC_SHIELD):getPower() ~= 100) then -- because GD blue mage spell
+    if (target:hasStatusEffect(dsp.effects.MAGIC_SHIELD) or math.random(0,99) < target:getMod(MOD_DEATHRES)) then
         spell:setMsg(msgBasic.MAGIC_NO_EFFECT);
         return 0;
-      end
     end
 
     -- falls to the ground
